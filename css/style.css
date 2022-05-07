@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*flex container*/
+main{
+    max-width: 1440px;
+    min-width: 375px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -400px -450px, 680px 350px;
+}
+
+/*iten flex and flex container*/
+.flex-container{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 375px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+/*iten flex*/
+.iten-img-header img{
+    max-width: 100%;
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+/*iten flex*/
+.iten-profile{
+    align-self: center;
+}
+
+.iten-profile .img-profile{
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+
+.iten-profile .img-profile img{
+    max-width: 100%;
+    width: 80%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.iten-profile .name-user{
+    position: relative;
+    top: -37px;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.iten-profile .name-user .age-user{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+.iten-profile .city-user{
+    position: relative;
+    text-align: center;
+    top: -27px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.flex-container .line-divisor{
+    border: none;
+    border-top: 1px solid lightgray;
+    outline: none;
+}
+
+/*flex container*/
+.flex-container .flex-container-social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.number-follows, .number-likes, .number-photos{
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.description-likes, .description-follow, .description-photos{
+    font-weight: 400;
+    font-size: 10px;
+    color: hsl(227, 10%, 46%);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
